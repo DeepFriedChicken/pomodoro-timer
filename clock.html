@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro Timer</title>
+        <meta charset="utf-8">
+        <style>
+            #title {
+                margin:25px 0 0 0;
+            }
+            #buttons {
+                position:relative;
+                bottom:15px;
+            }
+            #person-image {
+                width:60px;
+
+                position:relative;
+                top:15px;
+
+                margin:0 5px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="basicsCSS.css">
+    </head>
+    <body>
+        <h1 id="title">Working Time 1</h1>
+
+        <h1 id="timer">25:00</h2>
+
+        <div id="buttons" class="horizontal-center-helper">
+            <a href="pomodoro.html">Home</a>
+            <img id="person-image" src="Media/person.png">
+            <a id="pause">Start</a>
+        </div>
+
+        <!--For Chrome Extensions, JS has to be in seperate files, not embedded scripts-->
+        <script src="timerJS.js"></script>
+    </body>
+</html>

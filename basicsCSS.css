@@ -1,0 +1,71 @@
+/*contains basic classes, atrributes, and properties for every webpage*/
+
+/*BASIC ATTRIBUTES*/
+html {
+    scroll-behavior:smooth;/*internal links now scroll there instead of teleport*/
+    background-color:white;
+}
+body {/*GENERAL SIZE POSITION SPACING TEXT*/
+    /*Raleway, Trebuchet MS, Libre Baskerville - for text,  Julius Sans One - for links*/
+    background-color: rgb(248,248,242);
+
+    width:300px;
+    height:150px;
+
+    position:relative;
+
+    /*border:solid 2px;/*remove this when im done*/
+    margin:0;
+
+    line-height:1.5em;
+    font-family: Raleway, Trebuchet MS, sans-serif;
+    font-size:15px;/*roughly 20px*/
+}
+h1 {
+    font-size:30px;
+    text-align:center;/*only works on block elements*/
+}
+h2 {
+    font-size:20px;
+    text-align:center;/*only works on block elements*/
+}
+p {
+    font-size:20px;
+    margin:20px;
+}
+a {
+    color:black;
+    background-color: rgba(237,233,230,0.75);/*pinkish beige*/
+    user-select:none;
+
+    margin:5px 5px;
+    padding:5px 8px;
+    border-radius:3px;
+
+    text-decoration:none;
+}
+a:hover {
+    background-color: rgb(220,215,215);
+    cursor:pointer;
+}
+
+/*USEFUL CLASSES*/
+.spacer {
+    clear:both;
+    height:10vh;
+    position:relative;/*IDK if this will help the spacer interact with anything*/
+}
+.vertical-center-helper {/*allows elements to be vertically centered*/
+    display:table-cell;/*I think this allows the helper to use vertical-align*/
+
+    width:100%;
+
+    vertical-align:middle;/*do position calculuations from the middle of the element*/
+    position:absolute;
+    top:50%;/*centers the thing vertically*/
+}
+.horizontal-center-helper {
+    /*div is a block element, which makes text-align works*/
+
+    text-align:center;
+}
