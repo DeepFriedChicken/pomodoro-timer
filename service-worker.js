@@ -9,7 +9,6 @@ var secLeft = 1500;//working 1500 break 300 rest 900
 chrome.runtime.onMessage.addListener(
     function(message, sender, sendResponse) {
         if (message === "timer cycle") {
-            console.log("timer cycle: "+timerCycle);
             sendResponse(
                 timerCycle
             )
