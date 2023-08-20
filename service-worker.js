@@ -75,6 +75,7 @@ var endCount = function() {
         }
         else if (timerCycle === 4) {//if you're about to go to rest/got off the last break
             timerMode = "Rest";
+            timerCycle = "";/*empty string so it shows "Rest Time", instead of "Rest Time 4*/
             secLeft = 900;
         }
         else if (timerMode === "Break") {//if you just got off a middle break
